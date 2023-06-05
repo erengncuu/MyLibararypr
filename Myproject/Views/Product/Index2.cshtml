@@ -1,0 +1,27 @@
+﻿@model List<CustomerViewModel>
+
+ 
+
+<link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="~/twitter-bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>AD</th>
+        <th>YAZAR</th>
+    </tr>
+
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>@customer.Yazar</td>
+        </tr>
+    }
+</table>
